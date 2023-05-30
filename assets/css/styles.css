@@ -45,6 +45,7 @@ main{
     display: flex;
     flex-wrap: nowrap;
     border-radius: 1rem;
+    margin-top: 5rem;
 }
 
 h1{
@@ -69,8 +70,9 @@ li{
     list-style: none;
     display: flex;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
     color: var(--DarkSlateGrey);
+    font-size: 0.8rem;
 }
 
 li img{
@@ -91,17 +93,28 @@ label{
     color: var(--DarkSlateGrey);
 }
 
-input{
-    width: 100%;
+#email{
+    border-radius: 5px;
+    border: 1px solid var(--Grey);
 }
-
 #sub{
-    font-family: 'Roboto';
     color: var(--White);
     background-color: var(--CharcoalGrey);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     border: none;
     margin: 1rem 0;
 }
-.attribution { font-size: 11px; text-align: center; position: fixed; bottom: 15px; }
+
+.success{
+    display: none;
+}
+
+
+.success button{
+    background-color: var(--DarkSlateGrey);
+    color: var(--White);
+    border-radius: 0.5rem;
+    border-style: none;
+}
+.attribution { font-size: 11px; text-align: center; position: fixed; bottom: 0px; }
 .attribution a { color: hsl(228, 45%, 44%); }
